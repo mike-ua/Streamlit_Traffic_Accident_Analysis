@@ -1,5 +1,4 @@
 pandas
-matplotlib
-matplotlib.pyplot
+matplotlib==3.7.1
 seaborn
 streamlit
