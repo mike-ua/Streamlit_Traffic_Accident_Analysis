@@ -8,7 +8,7 @@ import streamlit as st
 
 # Create a direct download URL
 file_id = '1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
-download_url = f'https://drive.google.com/uc?export=download&={file_id}'
+download_url = f'https://drive.google.com/uc?export=download&id={file_id}'
 
 # Read the CSV file from Google Drive
 df = pd.read_csv(download_url, sep=';', header=0, encoding='utf-8')
