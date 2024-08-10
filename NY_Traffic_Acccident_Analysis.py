@@ -6,13 +6,17 @@ import streamlit as st
 
 # Part I: create a horizontal bar chart based on finding the top 12 causes (by count of occurances) of traffic accidents to display in a Streamlit app 
 
-# Create a direct download URL
-# file_id = '1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
+# Define the download URL from Google Drive
 download_url = 'https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
 
+# Set the chunk size for reading the CSV in parts
+chunk_size = 100000  # Number of rows per chunk
 
-# Read the CSV file from Google Drive
-df = pd.read_csv(download_url, sep=';', encoding='utf-8')
+# Read the CSV file from Google Drive in chunks and concatenate them
+chunks = pd.read_csv(download_url, sep=';', encoding='utf-8', chunksize=chunk_size)
+
+# Combine all chunks into a single DataFrame
+df = pd.concat(chunks)
 
 # Drop multiple rows based on a list of values
 df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
