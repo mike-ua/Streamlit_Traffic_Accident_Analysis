@@ -10,7 +10,7 @@ import streamlit as st
 download_url = 'https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
 
 # Set the chunk size for reading the CSV in parts
-chunk_size = 100000  # Number of rows per chunk
+chunk_size = 9999  # Number of rows per chunk
 
 # Read the CSV file from Google Drive in chunks and concatenate them
 chunks = pd.read_csv(download_url, sep=';', encoding='utf-8', chunksize=chunk_size)
