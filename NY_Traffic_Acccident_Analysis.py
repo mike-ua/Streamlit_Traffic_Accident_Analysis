@@ -8,7 +8,7 @@ import streamlit as st
 
 # Create a direct download URL
 #file_id = '1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
-download_url = f'https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
+download_url = 'https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
 
 
 # Read the CSV file from Google Drive
