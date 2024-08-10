@@ -7,8 +7,9 @@ import streamlit as st
 # Part I: create a horizontal bar chart based on finding the top 12 causes (by count of occurances) of traffic accidents to display in a Streamlit app 
 
 # Create a direct download URL
-file_id = '1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
-download_url = f'https://drive.google.com/uc?export=download&id={file_id}'
+#file_id = '1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
+download_url = f'https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8
+
 
 # Read the CSV file from Google Drive
 df = pd.read_csv(download_url, sep=';', header=0, encoding='utf-8')
