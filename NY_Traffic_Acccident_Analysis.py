@@ -8,11 +8,11 @@ import streamlit as st
 
 # Create a direct download URL
 #file_id = '1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
-download_url = https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8
+download_url = 'https://drive.google.com/uc?export=download&id=1DW_oMscvurVmphPDuVYLQ2r0C9co59d8'
 
 
 # Read the CSV file from Google Drive
-df = pd.read_csv(download_url, sep=';', header=0, encoding='utf-8')
+df = pd.read_csv(download_url, sep=';', encoding='utf-8')
 
 # Drop multiple rows based on a list of values
 df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
