@@ -133,7 +133,7 @@ st.markdown("Should the focus be on this group of accidents (**:red[e.g. 'I own 
 
 st.header('Data Analysis Tools Used')
 st.markdown('**Dataset:** approximately 2 million rows of information (a .csv file, approx. 450MB)')
-st.markdown('**SQLite / DBeaver:** database / frontend for exploring the dataset with SQL')
+st.markdown('**SQLite / DB Browser:** database / frontend for exploring the dataset with SQL')
 st.markdown('**Python:** transforming the .csv into a .db file, creating the basic script, debugging')
 st.markdown('**Pandas, Matplotlib:** Data manipulation, calculations, pie chart visualization')
 st.markdown('**Seaborn:** creating the main visualization')
