@@ -54,7 +54,7 @@ st.text('source: https://catalog.data.gov/dataset/motor-vehicle-collisions-crash
 
 st.header("Can 'Self-Driving Cars' help reduce accidents? ")
 st.markdown("**Specifically:** which categories of accidents could be reduced the most?")
-st.markdown("To simplify, I grouped the 12 contributing factors into two categories: ")
+st.markdown("To simplify, I grouped the Top 12 contributing factors into two categories: ")
 st.markdown("1. Technical / Skills / Other, or, **EMOTION NEUTRAL** events, which include:")
 st.markdown("- 'Backing Unsafely', 'Fatigued/Drowsy' and 'Driver Inexperience'")
 st.markdown("2. Driver Attitude, or **EMOTION FUELED** events, which include:")
