@@ -102,6 +102,7 @@ df_filtered = df.isin(category_map.keys())
 # Replace the contributing factor categories with the new groups
 df_filtered['Grouped Factor'] = df_filtered.replace(category_map)
 
+
 # Count the occurrences of each grouped factor
 grouped_factor_counts = df_filtered['Grouped Factor'].value_counts()
 
