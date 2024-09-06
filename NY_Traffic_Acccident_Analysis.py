@@ -75,7 +75,7 @@ download_url = f'https://drive.google.com/uc?export=download&id={file_id}'
 df = pd.read_csv(download_url)
 
 # Drop rows which do not list a 'contributing factor'
-df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
+# df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
 
 # Define a dictionary to map original categories to new groups, including 'Driver Inattention/Distraction'
 category_map = {
