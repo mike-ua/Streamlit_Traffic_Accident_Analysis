@@ -20,7 +20,7 @@ chunks = pd.read_csv(download_url, sep=';', encoding='utf-8', chunksize=chunk_si
 df = pd.concat(chunks)
 
 # Drop multiple rows based on a list of values
-df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
+# df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
 
 # Count the occurrences of each contributing factor
 factor_counts = df['CONTRIBUTING_FACTOR_VEHICLE_1'].value_counts()
