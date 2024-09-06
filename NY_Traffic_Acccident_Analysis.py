@@ -19,9 +19,6 @@ chunks = pd.read_csv(download_url, sep=';', encoding='utf-8', chunksize=chunk_si
 # Combine all chunks into a single DataFrame
 df = pd.concat(chunks)
 
-# Drop multiple rows based on a list of values
-# df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
-
 # Count the occurrences of each contributing factor
 factor_counts = df['CONTRIBUTING_FACTOR_VEHICLE_1'].value_counts()
 
@@ -73,9 +70,6 @@ download_url = f'https://drive.google.com/uc?export=download&id={file_id}'
 
 # Read the CSV file from Google Drive
 df = pd.read_csv(download_url)
-
-# Drop rows which do not list a 'contributing factor'
-# df.drop(df[df['CONTRIBUTING_FACTOR_VEHICLE_1'].isin(['Unspecified', 'Other Vehicular'])].index, inplace=True)
 
 # Define a dictionary to map original categories to new groups, including 'Driver Inattention/Distraction'
 category_map = {
