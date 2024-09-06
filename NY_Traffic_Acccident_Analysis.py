@@ -94,7 +94,7 @@ category_map = {
 }
 
 # Standardize the column by trimming spaces and converting to title case
-# df['CONTRIBUTING_FACTOR_VEHICLE_1'] = df['CONTRIBUTING_FACTOR_VEHICLE_1'].str.strip().str.title()
+df['CONTRIBUTING_FACTOR_VEHICLE_1'] = df['CONTRIBUTING_FACTOR_VEHICLE_1'].str.strip().str.title()
 
 # Filter the DataFrame to only include rows with contributing factors in the category_map keys
 df_filtered = df.isin(category_map.keys())
